@@ -10,10 +10,13 @@ var tick = function(){
   if (i%60 === 0){
     console.log("tock");
   }
+
+  if(i%(60*60) === 0){
   for (var h = 0; h <= 12; h++) {
-    if(i%(60*60) === 0){
-      console.log(h * "BONG ");
+    bongs = [];
+    bongs.push("BONG!");
     }
+      console.log(bongs);
   }
 };
 interval = setInterval(tick,1000);
